@@ -7,10 +7,10 @@
  * Author URI:      https://kraftplugins.com
  * Text Domain:     wheel-of-life
  * Domain Path:     /languages
- * Version:         1.1.9
+ * Version:         1.2.0
  * Requires at least: 5.2
  * Requires PHP:      7.0
- * Tested up to: 6.6
+ * Tested up to: 6.8
  *
  * @package         Wheeloflife
  */
@@ -40,5 +40,5 @@ function wheeloflife_spinthewheels() {
 
 $GLOBALS['WHL_OF_LIFE'] = wheeloflife_spinthewheels();
 
-// Invokes all functions attached to the 'wheeloflife_free_loaded' hook
+// Invokes all functions attached to the 'wheeloflife_free_loaded' hook.
 do_action( 'wheeloflife_free_loaded' );

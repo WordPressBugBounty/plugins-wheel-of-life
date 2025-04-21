@@ -16,9 +16,9 @@ msgstr ""
 #. Plugin Name of the plugin
 #: wheel-of-life.php
 #: includes/Wheel_Of_Life_Admin.php:225
-#: app/build/globalApp.js:1106
 #: app/src/admin/common/appSidebar.js:124
 #: app/src/admin/pages/wheelLists.js:160
+#: app/src/admin/wheelEdit.js:20
 msgid "Wheel of Life"
 msgstr ""
 
@@ -142,7 +142,6 @@ msgid "Schedule an Appointment"
 msgstr ""
 
 #: includes/functions/HelperFunctions.php:60
-#: app/build/globalApp.js:1106
 #: app/src/admin/pages/CallToAction.js:22
 msgid "Services"
 msgstr ""
@@ -161,7 +160,6 @@ msgstr ""
 
 #: includes/Wheel_Of_Life_Admin.php:273
 #: includes/Wheel_Of_Life_Admin.php:274
-#: app/build/editor.js:1
 #: app/src/admin/blocks/editor.js:25
 #: app/src/admin/blocks/editor.js:27
 msgid "Start Assessment"
@@ -278,7 +276,6 @@ msgid "View Submission"
 msgstr ""
 
 #: includes/Wheel_Of_Life_PostTypes.php:201
-#: app/build/globalApp.js:1106
 #: app/src/admin/pages/submissionLists.js:127
 #: app/src/admin/pages/submissionLists.js:143
 #: app/src/admin/pages/submissionLists.js:165
@@ -311,8 +308,6 @@ msgstr ""
 
 #. translators: %d: submission number
 #: templates/single-wheel-submissions.php:21
-#: app/build/frontendComponents.js:1
-#: app/build/wheelsFrontend.js:1
 #: app/src/public/assessment/WheelForm.js:303
 msgid "Wheel Submission No: #%d"
 msgstr ""
@@ -391,65 +386,39 @@ msgstr ""
 msgid "You can duplicate posts of type \"wheel\"."
 msgstr ""
 
-#: app/build/blocks.js:1106
-#: app/build/globalApp.js:1106
-#: app/build/uiComponents.js:1106
-#: app/src/@components/controls/Background.jsx:282
-#: app/src/admin/blocks/assesmentButton/Inspector.js:109
-msgid "Fixed"
-msgstr ""
-
-#: app/build/globalApp.js:1106
-#: app/build/uiComponents.js:1106
 #: app/src/@components/controls/Background.jsx:131
 msgid "Select logo"
 msgstr ""
 
-#: app/build/globalApp.js:1106
-#: app/build/uiComponents.js:1106
 #: app/src/@components/controls/Background.jsx:181
 msgid "Remove Image"
 msgstr ""
 
-#: app/build/globalApp.js:1106
-#: app/build/uiComponents.js:1106
 #: app/src/@components/controls/Background.jsx:214
 msgid "Color"
 msgstr ""
 
-#: app/build/globalApp.js:1106
-#: app/build/uiComponents.js:1106
 #: app/src/@components/controls/Background.jsx:221
 msgid "Overlay Color"
 msgstr ""
 
-#: app/build/globalApp.js:1106
-#: app/build/uiComponents.js:1106
 #: app/src/@components/controls/Background.jsx:229
 msgid "Image"
 msgstr ""
 
-#: app/build/globalApp.js:1106
-#: app/build/uiComponents.js:1106
 #: app/src/@components/controls/Background.jsx:251
 msgid "X Position"
 msgstr ""
 
-#: app/build/globalApp.js:1106
-#: app/build/uiComponents.js:1106
 #: app/src/@components/controls/Background.jsx:256
 msgid "Y Position"
 msgstr ""
 
-#: app/build/globalApp.js:1106
-#: app/build/uiComponents.js:1106
 #: app/src/@components/controls/Background.jsx:261
 #: app/src/@components/controls/Background.jsx:268
 msgid "Repeat"
 msgstr ""
 
-#: app/build/globalApp.js:1106
-#: app/build/uiComponents.js:1106
 #: app/src/@components/controls/Background.jsx:266
 #: app/src/@components/controls/Background.jsx:280
 #: app/src/admin/blocks/ui-components/helpers/InputWithOnlyNumbers.js:11
@@ -457,68 +426,51 @@ msgstr ""
 msgid "Default"
 msgstr ""
 
-#: app/build/globalApp.js:1106
-#: app/build/uiComponents.js:1106
 #: app/src/@components/controls/Background.jsx:267
 msgid "No-repeat"
 msgstr ""
 
-#: app/build/globalApp.js:1106
-#: app/build/uiComponents.js:1106
 #: app/src/@components/controls/Background.jsx:269
 msgid "Repeat-x"
 msgstr ""
 
-#: app/build/globalApp.js:1106
-#: app/build/uiComponents.js:1106
 #: app/src/@components/controls/Background.jsx:270
 msgid "Repeat-y"
 msgstr ""
 
-#: app/build/globalApp.js:1106
-#: app/build/uiComponents.js:1106
 #: app/src/@components/controls/Background.jsx:276
 msgid "Attachment"
 msgstr ""
 
-#: app/build/globalApp.js:1106
-#: app/build/uiComponents.js:1106
 #: app/src/@components/controls/Background.jsx:281
 msgid "Scroll"
 msgstr ""
 
-#: app/build/globalApp.js:1106
-#: app/build/uiComponents.js:1106
+#: app/src/@components/controls/Background.jsx:282
+#: app/src/admin/blocks/assesmentButton/Inspector.js:109
+msgid "Fixed"
+msgstr ""
+
 #: app/src/@components/controls/Background.jsx:286
 msgid "Size"
 msgstr ""
 
-#: app/build/globalApp.js:1106
-#: app/build/uiComponents.js:1106
 #: app/src/@components/controls/Background.jsx:290
 msgid "Auto"
 msgstr ""
 
-#: app/build/globalApp.js:1106
-#: app/build/uiComponents.js:1106
 #: app/src/@components/controls/Background.jsx:291
 msgid "Cover"
 msgstr ""
 
-#: app/build/globalApp.js:1106
-#: app/build/uiComponents.js:1106
 #: app/src/@components/controls/Background.jsx:292
 msgid "Contain"
 msgstr ""
 
-#: app/build/globalApp.js:1106
-#: app/build/uiComponents.js:1106
 #: app/src/@components/controls/Background.jsx:324
 msgid "Choose Color / Image"
 msgstr ""
 
-#: app/build/globalApp.js:1106
-#: app/build/uiComponents.js:1106
 #: app/src/@components/controls/Background.jsx:329
 msgid "Pick Gradient Color"
 msgstr ""

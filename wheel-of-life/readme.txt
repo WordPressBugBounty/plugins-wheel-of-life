@@ -3,9 +3,9 @@ Contributors: kraftplugins
 Plugin link: https://wheeloflife.pro/
 Tags: survey, coaching, lead, wheel, coaches
 Requires at least: 6.0
-Tested up to: 6.6
+Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.1.9
+Stable tag: 1.2.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -94,6 +94,10 @@ Yes, the plugin can be used with any theme of your choice. It will work smoothly
 4. Settings - Single Wheel of Life
 
 == Changelog ==
+
+= 1.2.0 - 8th April, 2025 =
+* Fixes: Resolved the issue where the Wheel of Life editor toolbar was not available.
+* Fixes: Resolved a CSS conflict where Wheel of Life styles were overriding default WordPress styles.
 
 = 1.1.9 - 11th September, 2024 =
 * Security: Prevent wheel settings from being updated by unauthorized users
