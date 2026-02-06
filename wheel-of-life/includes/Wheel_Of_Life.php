@@ -19,7 +19,7 @@ final class Wheel_Of_Life {
      *
      * @var string
      */
-    public $version = '1.1.8';
+    public $version = '1.2.1';
 
     /**
      * The single instance of the class.

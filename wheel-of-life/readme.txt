@@ -3,9 +3,9 @@ Contributors: kraftplugins
 Plugin link: https://wheeloflife.pro/
 Tags: survey, coaching, lead, wheel, coaches
 Requires at least: 6.0
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -94,6 +94,13 @@ Yes, the plugin can be used with any theme of your choice. It will work smoothly
 4. Settings - Single Wheel of Life
 
 == Changelog ==
+
+= 1.2.1 - 7th January, 2026 =
+* Security: Added rate limiting to email report functionality (3 requests per hour per IP)
+* Security: Added validation to prevent multiple email recipients in report emails
+* Security: Added report link validation to ensure links are from the same site
+* Security: Added verification that report links point to valid, published wheel submissions
+* Enhancement: Updated minimum PHP version requirement to 7.4
 
 = 1.2.0 - 8th April, 2025 =
 * Fixes: Resolved the issue where the Wheel of Life editor toolbar was not available.

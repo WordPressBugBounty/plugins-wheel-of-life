@@ -1,15 +1,15 @@
-# Copyright (C) 2025 Kraft Plugins
+# Copyright (C) 2026 Kraft Plugins
 # This file is distributed under the same license as the Wheel of Life plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Wheel of Life 1.2.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wheel-of-life\n"
+"Project-Id-Version: Wheel of Life 1.2.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wheeloflife\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-04-21T10:03:51+00:00\n"
+"POT-Creation-Date: 2026-01-30T05:28:52+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: wheel-of-life\n"
@@ -156,45 +156,60 @@ msgstr ""
 msgid "Saved successfully . "
 msgstr ""
 
-#: includes/functions/AjaxFunctions.php:491
-msgid "Please provide a valid email address."
-msgstr ""
-
-#: includes/functions/AjaxFunctions.php:495
-msgid "Your Assessment report has been created!"
-msgstr ""
-
-#: includes/functions/AjaxFunctions.php:499
-msgid "Dear {email},"
-msgstr ""
-
-#: includes/functions/AjaxFunctions.php:500
-msgid "Thank you for taking the Assessment. You can view your assessment information via the link below."
+#: includes/functions/AjaxFunctions.php:490
+msgid "Too many requests. Please try again later."
 msgstr ""
 
 #: includes/functions/AjaxFunctions.php:501
-msgid "My Wheel Report"
+msgid "Please provide a valid email address."
 msgstr ""
 
-#: includes/functions/AjaxFunctions.php:502
-msgid "Thank you."
+#: includes/functions/AjaxFunctions.php:506
+msgid "Please provide a single email address."
 msgstr ""
 
 #: includes/functions/AjaxFunctions.php:511
+#: includes/functions/AjaxFunctions.php:517
+#: includes/functions/AjaxFunctions.php:523
+#: includes/functions/AjaxFunctions.php:528
+msgid "Invalid report link."
+msgstr ""
+
+#: includes/functions/AjaxFunctions.php:536
+msgid "Your Assessment report has been created!"
+msgstr ""
+
+#: includes/functions/AjaxFunctions.php:540
+msgid "Dear {email},"
+msgstr ""
+
+#: includes/functions/AjaxFunctions.php:541
+msgid "Thank you for taking the Assessment. You can view your assessment information via the link below."
+msgstr ""
+
+#: includes/functions/AjaxFunctions.php:542
+msgid "My Wheel Report"
+msgstr ""
+
+#: includes/functions/AjaxFunctions.php:543
+msgid "Thank you."
+msgstr ""
+
+#: includes/functions/AjaxFunctions.php:552
 msgid "Email sent failed. Please try again later."
 msgstr ""
 
-#: includes/functions/AjaxFunctions.php:513
-#: includes/functions/AjaxFunctions.php:520
+#: includes/functions/AjaxFunctions.php:554
+#: includes/functions/AjaxFunctions.php:561
 msgid "Email sent successfully."
 msgstr ""
 
-#: includes/functions/AjaxFunctions.php:548
-#: includes/functions/AjaxFunctions.php:575
+#: includes/functions/AjaxFunctions.php:589
+#: includes/functions/AjaxFunctions.php:616
 msgid "Something went wrong! Please try again"
 msgstr ""
 
-#: includes/functions/AjaxFunctions.php:583
+#: includes/functions/AjaxFunctions.php:624
 msgid "Report Saved Successfully."
 msgstr ""
 

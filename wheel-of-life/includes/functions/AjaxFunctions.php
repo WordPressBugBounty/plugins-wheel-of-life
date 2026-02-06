@@ -481,15 +481,56 @@ class Wheel_Of_Life_Ajax {
 	public function send_my_wheel_email() {
 		check_ajax_referer( 'wheeloflife_ajax_nonce', 'security' );
 
-		$link       = isset( $_POST[ 'reportLink' ] ) ? esc_url_raw( $_POST[ 'reportLink' ] ) : '';
-		$to_email   = isset( $_POST[ 'toEmail' ] ) ? sanitize_email( $_POST[ 'toEmail' ] ) : '';
-		$from_email = sanitize_email( get_option( 'admin_email' ) );
-		$from_name  = wp_specialchars_decode( get_bloginfo( 'name' ), ENT_QUOTES );
+		// 1. Rate limiting using transients.
+		$ip_address = isset( $_SERVER['REMOTE_ADDR'] ) ? $_SERVER['REMOTE_ADDR'] : '';
+		$rate_limit_key = 'wol_email_rate_' . md5( $ip_address );
+		$attempts = get_transient( $rate_limit_key );
 
-		// Check the email address.
+		if ( $attempts && $attempts >= 3 ) {
+			wp_send_json_error( __( 'Too many requests. Please try again later.', 'wheel-of-life' ) );
+		}
+
+		set_transient( $rate_limit_key, ( $attempts ? $attempts + 1 : 1 ), HOUR_IN_SECONDS );
+
+		// 2. Sanitize and validate inputs.
+		$link       = isset( $_POST['reportLink'] ) ? esc_url_raw( $_POST['reportLink'] ) : '';
+		$to_email   = isset( $_POST['toEmail'] ) ? sanitize_email( $_POST['toEmail'] ) : '';
+
+		// 3. Validate email address.
 		if ( empty( $to_email ) || ! is_email( $to_email ) ) {
 			wp_send_json_error( __( 'Please provide a valid email address.', 'wheel-of-life' ) );
 		}
+
+		// Prevent multiple recipients.
+		if ( strpos( $to_email, ',' ) !== false || strpos( $to_email, ';' ) !== false ) {
+			wp_send_json_error( __( 'Please provide a single email address.', 'wheel-of-life' ) );
+		}
+
+		// 4. Validate report link.
+		if ( empty( $link ) ) {
+			wp_send_json_error( __( 'Invalid report link.', 'wheel-of-life' ) );
+		}
+
+		// Ensure link is from the same site.
+		$site_url = get_site_url();
+		if ( strpos( $link, $site_url ) !== 0 ) {
+			wp_send_json_error( __( 'Invalid report link.', 'wheel-of-life' ) );
+		}
+
+		// Validate it's a legitimate wheel submission.
+		$submission_id = url_to_postid( $link );
+		if ( ! $submission_id || get_post_type( $submission_id ) !== WHEEL_OF_LIFE_SUBMISSIONS_POST_TYPE ) {
+			wp_send_json_error( __( 'Invalid report link.', 'wheel-of-life' ) );
+		}
+
+		// Verify the submission exists and is published.
+		if ( get_post_status( $submission_id ) !== 'publish' ) {
+			wp_send_json_error( __( 'Invalid report link.', 'wheel-of-life' ) );
+		}
+
+		// 5. Proceed with sending email.
+		$from_email = sanitize_email( get_option( 'admin_email' ) );
+		$from_name  = wp_specialchars_decode( get_bloginfo( 'name' ), ENT_QUOTES );
 
 		if ( ! class_exists( 'WheelOfLife_Pro\Wheel_Of_Life_Pro' ) ) {
 			$subject = __( 'Your Assessment report has been created!', 'wheel-of-life' );

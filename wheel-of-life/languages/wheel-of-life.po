@@ -87,45 +87,45 @@ msgstr ""
 msgid "Wheel copied successfully . "
 msgstr ""
 
-#: includes/functions/AjaxFunctions.php:491
+#: includes/functions/AjaxFunctions.php:501
 msgid "Please provide a valid email address."
 msgstr ""
 
-#: includes/functions/AjaxFunctions.php:495
+#: includes/functions/AjaxFunctions.php:536
 msgid "Your Assessment report has been created!"
 msgstr ""
 
-#: includes/functions/AjaxFunctions.php:499
+#: includes/functions/AjaxFunctions.php:540
 msgid "Dear {email},"
 msgstr ""
 
-#: includes/functions/AjaxFunctions.php:500
+#: includes/functions/AjaxFunctions.php:541
 msgid "Thank you for taking the Assessment. You can view your assessment information via the link below."
 msgstr ""
 
-#: includes/functions/AjaxFunctions.php:501
+#: includes/functions/AjaxFunctions.php:542
 msgid "My Wheel Report"
 msgstr ""
 
-#: includes/functions/AjaxFunctions.php:502
+#: includes/functions/AjaxFunctions.php:543
 msgid "Thank you."
 msgstr ""
 
-#: includes/functions/AjaxFunctions.php:511
+#: includes/functions/AjaxFunctions.php:552
 msgid "Email sent failed. Please try again later."
 msgstr ""
 
-#: includes/functions/AjaxFunctions.php:513
-#: includes/functions/AjaxFunctions.php:520
+#: includes/functions/AjaxFunctions.php:554
+#: includes/functions/AjaxFunctions.php:561
 msgid "Email sent successfully."
 msgstr ""
 
-#: includes/functions/AjaxFunctions.php:548
-#: includes/functions/AjaxFunctions.php:575
+#: includes/functions/AjaxFunctions.php:589
+#: includes/functions/AjaxFunctions.php:616
 msgid "Something went wrong! Please try again"
 msgstr ""
 
-#: includes/functions/AjaxFunctions.php:583
+#: includes/functions/AjaxFunctions.php:624
 msgid "Report Saved Successfully."
 msgstr ""
 
@@ -384,6 +384,21 @@ msgstr ""
 
 #: includes/functions/AjaxFunctions.php:415
 msgid "You can duplicate posts of type \"wheel\"."
+msgstr ""
+
+#: includes/functions/AjaxFunctions.php:490
+msgid "Too many requests. Please try again later."
+msgstr ""
+
+#: includes/functions/AjaxFunctions.php:506
+msgid "Please provide a single email address."
+msgstr ""
+
+#: includes/functions/AjaxFunctions.php:511
+#: includes/functions/AjaxFunctions.php:517
+#: includes/functions/AjaxFunctions.php:523
+#: includes/functions/AjaxFunctions.php:528
+msgid "Invalid report link."
 msgstr ""
 
 #: app/src/@components/controls/Background.jsx:131
