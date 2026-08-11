@@ -12,14 +12,14 @@ class ComposerStaticInit6beca39a6af0a854af1a4eea69a4f6ff
     );
 
     public static $prefixLengthsPsr4 = array (
-        'W' => 
+        'W' =>
         array (
             'WheelOfLife\\' => 12,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'WheelOfLife\\' => 
+        'WheelOfLife\\' =>
         array (
             0 => __DIR__ . '/../..' . '/includes',
         ),

@@ -3,7 +3,7 @@
         'name' => 'avee/wheeloflife',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'ffd7b70c415ec84bf53a34cc4ef10241f6ce42b1',
+        'reference' => 'ee6afb2cd4ea1ff516557b32cd8bd1ac5ccfebb8',
         'type' => 'worpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'avee/wheeloflife' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'ffd7b70c415ec84bf53a34cc4ef10241f6ce42b1',
+            'reference' => 'ee6afb2cd4ea1ff516557b32cd8bd1ac5ccfebb8',
             'type' => 'worpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

@@ -7,10 +7,10 @@
  * Author URI:      https://kraftplugins.com
  * Text Domain:     wheel-of-life
  * Domain Path:     /languages
- * Version:         1.2.1
- * Requires at least: 5.2
+ * Version:         1.2.2
+ * Requires at least: 6.0
  * Requires PHP:      7.4
- * Tested up to: 6.9
+ * Tested up to: 7.0
  *
  * @package         Wheeloflife
  */
